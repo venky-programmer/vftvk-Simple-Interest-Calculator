@@ -11,10 +11,12 @@ function compute()
     document.getElementById("interesttext").innerHTML = r;
     document.getElementById("simpleinteresttext").innerHTML = (p*(r/100)*n);
     document.getElementById("yeartext").innerHTML = parseInt(yearint) + parseInt(n) + (-1);
+
+    if(document.getElementById("principal").value <=0){
+        alert("Please enter a positive number");
+    }
+    
 }
-
-document.getElementById("mytext").innerHTML = principalamount;
-
 
 function myFunction() {
     var number  = document.getElementById("principal").value;

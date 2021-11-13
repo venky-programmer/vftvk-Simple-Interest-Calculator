@@ -5,7 +5,7 @@
     </head>
     <body  onload="myFunction()">
         <div class="maindiv">
-            <h1>Simple Interest Calculator</h1>
+            <h1>Web App – Simple Interest Calculator</h1>
             <table class="center">
                 <tr>
                     <td>Amount</td>
@@ -13,7 +13,7 @@
                 </tr>
                 <tr>
                     <td>Interest Rate</td>
-                    <td><input type="range" id="rate" min="0" max="10" step="0.1" onchange="show_value(this.value)">
+                    <td><input type="range" id="rate" min="1" max="20" step="0.1" onchange="show_value(this.value)">
                         <span id="slider_value"></span><span>%</span></td>
                 </tr>
                 <tr>
@@ -39,12 +39,14 @@
             </table>
 
             <p>
-                If you deposit <span id="principaltext"></span> <br>
-                at an interest rate of <span id="interesttext"></span>%.<br>
-                You will receive an amount of <span id="simpleinteresttext">,</span><br>
-                in the year <span id="yeartext"></span>
+                If you deposit <mark><span id="principaltext"></span></mark><br>
+                at an interest rate of <mark><span id="interesttext"></span>%.</mark><br>
+                You will receive an amount of <mark><span id="simpleinteresttext"></span></mark>,<br>
+                in the year <mark><span id="yeartext"></span></mark>
             </p>
-
+            <footer>
+                <h4>&copy; Everyone can get reach</h4>
+            </footer>
             
         </div>            
             
