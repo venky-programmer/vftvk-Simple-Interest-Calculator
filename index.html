@@ -3,7 +3,7 @@
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body  onload="myFunction()">
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
             <table class="center">
@@ -20,11 +20,11 @@
                     <td>No. of Years</td>
                     <td>
                         <select type="number" name="cars" id="years">
-                            <option value="1year">1</option>
-                            <option value="2year">2</option>
-                            <option value="3year">3</option>
-                            <option value="4year">4</option>
-                            <option value="5year">5</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
                           </select>
                     </td>
                 </tr>
@@ -32,6 +32,15 @@
                     <td><button onclick="compute()">Compute Interest</button></td>
                 </tr>
             </table>
+
+            <p>
+                If you deposit <span id="principaltext"></span> <br>
+                at an interest rate of <span id="interesttext"></span>%.<br>
+                You will receive an amount of <span id="simpleinteresttext">,</span><br>
+                in the year <span id="yeartext"></span>
+            </p>
+
+            
         </div>            
             
     </body>
